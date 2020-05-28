@@ -39,6 +39,7 @@ build_vcs: $(sv_list)
 	-full64 \
 	-lca \
 	-sverilog \
+	-LDFLAGS -Wl,--no-as-needed \
 	-notice \
 	+lint=all,noVCDE \
 	-timescale=1ns/1ps \
